@@ -5,3 +5,67 @@
   margin: 0;
   padding: 0;
 }
+
+$White: hsl(0, 0%, 98%);
+$Gray: hsl(0, 0%, 41%);
+$Black: hsl(0, 0%, 8%);
+
+$font-size: 18px;
+$font-family: "Epilogue", sans-serif;
+$font-weight-500: 500;
+$font-weight-700: 700;
+
+body {
+  font-size: $font-size;
+  font-family: $font-family;
+  background-color: $White;
+}
+
+.btn {
+  color: $Gray;
+  background-color: $White;
+  outline: none;
+  padding: 0.8rem 1.4rem;
+  border: 2px solid $Gray;
+  border-radius: 15px;
+  font-size: $font-size;
+  font-weight: $font-weight-500;
+  &:hover {
+    cursor: pointer;
+    color: $Black;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3rem;
+  margin-top: 1.8rem;
+  nav {
+    margin-right: auto;
+    margin-left: 4.5rem;
+    ul {
+      display: flex;
+      li {
+        list-style: none;
+        a {
+          text-decoration: none;
+          color: $Gray;
+          &:hover {
+            cursor: pointer;
+            color: $Black;
+          }
+        }
+      }
+      li:not(:last-child) {
+        margin-right: 3rem;
+      }
+    }
+  }
+  .sub {
+    .login {
+      margin-right: 1rem;
+      border: none;
+    }
+  }
+}
