@@ -41,15 +41,25 @@ header nav ul {
   display: flex;
 }
 header nav ul li {
+  display: flex;
+  align-items: center;
   list-style: none;
 }
 header nav ul li a {
   text-decoration: none;
   color: hsl(0, 0%, 41%);
+  margin-right: 0.5rem;
 }
-header nav ul li a:hover {
+header nav ul li:hover a {
   cursor: pointer;
   color: hsl(0, 0%, 8%);
+}
+header nav ul li:hover svg {
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+header nav ul li:hover svg path {
+  stroke: hsl(0, 0%, 8%);
 }
 header nav ul li:not(:last-child) {
   margin-right: 3rem;
@@ -57,4 +67,48 @@ header nav ul li:not(:last-child) {
 header .sub .login {
   margin-right: 1rem;
   border: none;
+}
+
+.hero {
+  display: flex;
+  margin: 0 auto;
+  padding: 0 3rem;
+  width: 80%;
+}
+.hero .hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+}
+.hero .hero__content h1 {
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.hero .hero__content p {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin: 3.5rem 0 3rem 0;
+  color: hsl(0, 0%, 41%);
+}
+.hero .hero__content button {
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 98%);
+  padding: 1rem 1.8rem;
+}
+.hero .hero__content .clients {
+  display: flex;
+  justify-content: space-between;
+}
+.hero .hero__content .clients img {
+  height: 28px;
+}
+.hero .hero__image {
+  background-image: url("../images/image-hero-desktop.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

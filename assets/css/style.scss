@@ -47,13 +47,25 @@ header {
     ul {
       display: flex;
       li {
+        display: flex;
+        align-items: center;
         list-style: none;
         a {
           text-decoration: none;
           color: $Gray;
-          &:hover {
+          margin-right: 0.5rem;
+        }
+        &:hover {
+          a {
             cursor: pointer;
             color: $Black;
+          }
+          svg {
+            transform: rotate(180deg);
+            cursor: pointer;
+            path {
+              stroke: $Black;
+            }
           }
         }
       }
@@ -67,5 +79,49 @@ header {
       margin-right: 1rem;
       border: none;
     }
+  }
+}
+
+.hero {
+  display: flex;
+  margin: 0 auto;
+  padding: 0 3rem;
+  width: 80%;
+  .hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    h1 {
+      font-size: 6rem;
+      font-weight: 700;
+      line-height: 1;
+    }
+    p {
+      font-size: 25px;
+      font-weight: 500;
+      line-height: 1.4;
+      margin: 3.5rem 0 3rem 0;
+      color: $Gray;
+    }
+    button {
+      background-color: $Black;
+      color: $White;
+      padding: 1rem 1.8rem;
+    }
+    .clients {
+      display: flex;
+      justify-content: space-between;
+      img {
+        height: 28px;
+      }
+    }
+  }
+  .hero__image {
+    background-image: url("../images/image-hero-desktop.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 100%;
   }
 }
