@@ -71,23 +71,22 @@ header .sub .login {
 
 .hero {
   display: flex;
-  margin: 0 auto;
-  padding: 0 3rem;
+  gap: 5rem;
+  margin: 5rem auto 0 auto;
   width: 80%;
 }
 .hero .hero__content {
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  justify-content: center;
+  flex: 1;
+  margin-top: 4rem;
 }
 .hero .hero__content h1 {
-  font-size: 6rem;
+  font-size: 80px;
   font-weight: 700;
   line-height: 1;
+  margin-top: auto;
 }
 .hero .hero__content p {
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 500;
   line-height: 1.4;
   margin: 3.5rem 0 3rem 0;
@@ -97,10 +96,12 @@ header .sub .login {
   background-color: hsl(0, 0%, 8%);
   color: hsl(0, 0%, 98%);
   padding: 1rem 1.8rem;
+  font-weight: 700;
 }
 .hero .hero__content .clients {
   display: flex;
   justify-content: space-between;
+  margin-top: 8rem;
 }
 .hero .hero__content .clients img {
   height: 28px;
@@ -111,4 +112,5 @@ header .sub .login {
   background-position: center center;
   background-size: contain;
   width: 100%;
+  flex: 1;
 }/*# sourceMappingURL=style.css.map */
