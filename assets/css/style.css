@@ -41,7 +41,6 @@ header nav ul {
   display: flex;
 }
 header nav ul li {
-  display: flex;
   align-items: center;
   list-style: none;
 }
@@ -50,7 +49,7 @@ header nav ul li a {
   color: hsl(0, 0%, 41%);
   margin-right: 0.5rem;
 }
-header nav ul li:hover a {
+header nav ul li:hover > a {
   cursor: pointer;
   color: hsl(0, 0%, 8%);
 }
@@ -60,6 +59,23 @@ header nav ul li:hover svg {
 }
 header nav ul li:hover svg path {
   stroke: hsl(0, 0%, 8%);
+}
+header nav ul li .dropdown {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  margin-top: 4.5rem;
+  padding: 1.5rem;
+  background-color: white;
+  box-shadow: 0px 0px 30px 0px rgb(173, 171, 171);
+  border-radius: 8px;
+}
+header nav ul li .dropdown img {
+  margin-right: 1rem;
+}
+header nav ul li .dropdown li {
+  margin: 0.5rem 0;
 }
 header nav ul li:not(:last-child) {
   margin-right: 3rem;
@@ -97,6 +113,11 @@ header .sub .login {
   color: hsl(0, 0%, 98%);
   padding: 1rem 1.8rem;
   font-weight: 700;
+}
+.hero .hero__content button:hover {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 8%);
+  border: 1px solid hsl(0, 0%, 41%);
 }
 .hero .hero__content .clients {
   display: flex;
