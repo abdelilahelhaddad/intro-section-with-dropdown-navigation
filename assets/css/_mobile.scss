@@ -1,0 +1,42 @@
+@media (max-width: 425px) {
+  header {
+    padding: 0 1.5rem;
+    nav,
+    .sub {
+      display: none;
+    }
+  }
+
+  .hero {
+    flex-direction: column;
+    gap: 0;
+    margin: 1.5rem auto 0 auto;
+    width: 100%;
+    .hero__content {
+      text-align: center;
+      margin-top: 0;
+      order: 2;
+      flex: none;
+      h1 {
+        font-size: 40px;
+        margin-top: 2.5rem;
+      }
+      p {
+        font-size: $font-size;
+        margin: 2rem 1rem;
+      }
+      .clients {
+        margin: 3rem 1.5rem 1rem 1.5rem;
+        img {
+          height: 20px;
+        }
+      }
+    }
+    .hero__image {
+      background-image: url("../images/image-hero-mobile.png");
+      height: 320px;
+      order: 1;
+      flex: none;
+    }
+  }
+}

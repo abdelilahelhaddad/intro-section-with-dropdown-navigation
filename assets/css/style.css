@@ -134,4 +134,46 @@ header .sub .login {
   background-size: contain;
   width: 100%;
   flex: 1;
+}
+
+@media (max-width: 425px) {
+  header {
+    padding: 0 1.5rem;
+  }
+  header nav,
+  header .sub {
+    display: none;
+  }
+  .hero {
+    flex-direction: column;
+    gap: 0;
+    margin: 1.5rem auto 0 auto;
+    width: 100%;
+  }
+  .hero .hero__content {
+    text-align: center;
+    margin-top: 0;
+    order: 2;
+    flex: none;
+  }
+  .hero .hero__content h1 {
+    font-size: 40px;
+    margin-top: 2.5rem;
+  }
+  .hero .hero__content p {
+    font-size: 18px;
+    margin: 2rem 1rem;
+  }
+  .hero .hero__content .clients {
+    margin: 3rem 1.5rem 1rem 1.5rem;
+  }
+  .hero .hero__content .clients img {
+    height: 20px;
+  }
+  .hero .hero__image {
+    background-image: url("../images/image-hero-mobile.png");
+    height: 320px;
+    order: 1;
+    flex: none;
+  }
 }/*# sourceMappingURL=style.css.map */
