@@ -22,67 +22,80 @@
   <body>
     <header>
       <img height="32px" src="./assets/images/logo.svg" alt="Website Logo" />
-      <nav>
-        <ul>
-          <li id="features">
-            <a href="#">Features</a>
-            <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
-              <path
-                stroke="#686868"
-                stroke-width="1.5"
-                fill="none"
-                d="m1 1 4 4 4-4"
-              />
-            </svg>
-            <ul id="featuresDropdown" class="dropdown">
-              <li>
-                <img src="./assets/images/icon-todo.svg" alt="" /><a href="#"
-                  >Todo List</a
-                >
+      <div class="menuOverlay">
+        <div class="menu">
+          <div class="mobileMenu">
+            <img id="openMenu" src="./assets/images/icon-menu.svg" alt="" />
+            <img
+              id="closeMenu"
+              src="./assets/images/icon-close-menu.svg"
+              alt=""
+            />
+          </div>
+          <nav>
+            <ul>
+              <li id="features">
+                <a href="#">Features</a>
+                <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    stroke="#686868"
+                    stroke-width="1.5"
+                    fill="none"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+                <ul id="featuresDropdown" class="dropdown">
+                  <li>
+                    <img src="./assets/images/icon-todo.svg" alt="" /><a
+                      href="#"
+                      >Todo List</a
+                    >
+                  </li>
+                  <li>
+                    <img src="./assets/images/icon-calendar.svg" alt="" /><a
+                      href="#"
+                      >Calendar</a
+                    >
+                  </li>
+                  <li>
+                    <img src="./assets/images/icon-reminders.svg" alt="" /><a
+                      href="#"
+                      >Reminders</a
+                    >
+                  </li>
+                  <li>
+                    <img src="./assets/images/icon-planning.svg" alt="" /><a
+                      href="#"
+                      >Planning</a
+                    >
+                  </li>
+                </ul>
               </li>
-              <li>
-                <img src="./assets/images/icon-calendar.svg" alt="" /><a
-                  href="#"
-                  >Calendar</a
-                >
+              <li id="company">
+                <a href="#">Company</a>
+                <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    stroke="#686868"
+                    stroke-width="1.5"
+                    fill="none"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+                <ul id="companyDropdown" class="dropdown">
+                  <li><a href="#">History</a></li>
+                  <li><a href="#">Our Team</a></li>
+                  <li><a href="#">Blog</a></li>
+                </ul>
               </li>
-              <li>
-                <img src="./assets/images/icon-reminders.svg" alt="" /><a
-                  href="#"
-                  >Reminders</a
-                >
-              </li>
-              <li>
-                <img src="./assets/images/icon-planning.svg" alt="" /><a
-                  href="#"
-                  >Planning</a
-                >
-              </li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">About</a></li>
             </ul>
-          </li>
-          <li id="company">
-            <a href="#">Company</a>
-            <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
-              <path
-                stroke="#686868"
-                stroke-width="1.5"
-                fill="none"
-                d="m1 1 4 4 4-4"
-              />
-            </svg>
-            <ul id="companyDropdown" class="dropdown">
-              <li><a href="#">History</a></li>
-              <li><a href="#">Our Team</a></li>
-              <li><a href="#">Blog</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">About</a></li>
-        </ul>
-      </nav>
-      <div class="sub">
-        <button class="login btn">Login</button>
-        <button class="register btn">Register</button>
+          </nav>
+          <div class="sub">
+            <button class="login btn">Login</button>
+            <button class="register btn">Register</button>
+          </div>
+        </div>
       </div>
     </header>
     <section class="hero">

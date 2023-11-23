@@ -137,12 +137,50 @@ header .sub .login {
 }
 
 @media (max-width: 425px) {
-  header {
-    padding: 0 1.5rem;
+  body {
+    position: relative;
   }
-  header nav,
-  header .sub {
+  header {
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    margin-top: 0;
+  }
+  header .menuOverlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  header .menuOverlay .menu {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: hsl(0, 0%, 98%);
+    padding: 1.5rem;
+    width: 65%;
+  }
+  header .menuOverlay .menu .mobileMenu {
+    text-align: right;
+  }
+  header .menuOverlay .menu .mobileMenu #openMenu {
     display: none;
+  }
+  header .menuOverlay .menu nav {
+    margin: 0;
+  }
+  header .menuOverlay .menu nav ul {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+  header .menuOverlay .menu nav ul li {
+    margin-top: 1.5rem;
+  }
+  header .sub {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5rem;
   }
   .hero {
     flex-direction: column;

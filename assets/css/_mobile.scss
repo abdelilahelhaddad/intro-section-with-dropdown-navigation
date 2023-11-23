@@ -1,9 +1,51 @@
 @media (max-width: 425px) {
+  body {
+    position: relative;
+  }
   header {
-    padding: 0 1.5rem;
-    nav,
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    margin-top: 0;
+    .menuOverlay {
+      background-color: rgba($color: #000000, $alpha: 0.6);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      .menu {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: $White;
+        padding: 1.5rem;
+        width: 65%;
+        .mobileMenu {
+          text-align: right;
+          #closeMenu {
+            // position: absolute;
+            // top: 0;
+          }
+          #openMenu {
+            display: none;
+          }
+        }
+        nav {
+          margin: 0;
+          ul {
+            flex-direction: column;
+            margin-top: 1rem;
+            li {
+              margin-top: 1.5rem;
+            }
+          }
+        }
+      }
+    }
     .sub {
-      display: none;
+      display: flex;
+      flex-direction: column;
+      margin-top: 2.5rem;
     }
   }
 
