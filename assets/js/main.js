@@ -34,3 +34,7 @@ openMenuIcon.addEventListener("click", () => {
 closeMenuIcon.addEventListener("click", () => {
   body.removeAttribute("id");
 });
+
+body.addEventListener("click", (e) => {
+  console.log(e.target);
+});

@@ -33,34 +33,46 @@ header {
   padding: 0 3rem;
   margin-top: 1.8rem;
 }
-header nav {
+header img {
+  flex: 1;
+}
+header .menuOverlay {
+  flex: 13;
+}
+header .menuOverlay .menu {
+  display: flex;
+}
+header .menuOverlay .menu .mobileMenu {
+  display: none;
+}
+header .menuOverlay .menu nav {
   margin-right: auto;
   margin-left: 4.5rem;
 }
-header nav ul {
+header .menuOverlay .menu nav ul {
   display: flex;
 }
-header nav ul li {
+header .menuOverlay .menu nav ul li {
   align-items: center;
   list-style: none;
 }
-header nav ul li a {
+header .menuOverlay .menu nav ul li a {
   text-decoration: none;
   color: hsl(0, 0%, 41%);
   margin-right: 0.5rem;
 }
-header nav ul li:hover > a {
+header .menuOverlay .menu nav ul li:hover > a {
   cursor: pointer;
   color: hsl(0, 0%, 8%);
 }
-header nav ul li:hover svg {
+header .menuOverlay .menu nav ul li:hover svg {
   transform: rotate(180deg);
   cursor: pointer;
 }
-header nav ul li:hover svg path {
+header .menuOverlay .menu nav ul li:hover svg path {
   stroke: hsl(0, 0%, 8%);
 }
-header nav ul li .dropdown {
+header .menuOverlay .menu nav ul li .dropdown {
   display: none;
   position: absolute;
   flex-direction: column;
@@ -71,16 +83,16 @@ header nav ul li .dropdown {
   box-shadow: 0px 0px 30px 0px rgb(173, 171, 171);
   border-radius: 8px;
 }
-header nav ul li .dropdown img {
+header .menuOverlay .menu nav ul li .dropdown img {
   margin-right: 1rem;
 }
-header nav ul li .dropdown li {
+header .menuOverlay .menu nav ul li .dropdown li {
   margin: 0.5rem 0;
 }
-header nav ul li:not(:last-child) {
+header .menuOverlay .menu nav ul li:not(:last-child) {
   margin-right: 3rem;
 }
-header .sub .login {
+header .menuOverlay .menu .sub .login {
   margin-right: 1rem;
   border: none;
 }
@@ -141,6 +153,9 @@ header .sub .login {
     position: relative;
     overflow: hidden;
   }
+  body#OpenMobileMenu img {
+    flex: none;
+  }
   body#OpenMobileMenu .menuOverlay {
     background-color: rgba(0, 0, 0, 0.6);
     position: absolute;
@@ -148,6 +163,7 @@ header .sub .login {
     bottom: 0;
     right: 0;
     left: 0;
+    flex: none;
   }
   body#OpenMobileMenu .menuOverlay .menu {
     height: 100%;
@@ -157,6 +173,8 @@ header .sub .login {
     background-color: hsl(0, 0%, 98%);
     padding: 1.5rem;
     width: 65%;
+    flex-direction: column;
+    justify-content: start;
   }
   body#OpenMobileMenu .menuOverlay .menu .mobileMenu {
     text-align: right;
@@ -186,6 +204,12 @@ header .sub .login {
   header {
     padding: 1.5rem 1.5rem 0 1.5rem;
     margin-top: 0;
+  }
+  header .menuOverlay .menu {
+    justify-content: end;
+  }
+  header .menuOverlay .menu .mobileMenu {
+    display: block;
   }
   header .menuOverlay .menu .mobileMenu #closeMenuIcon {
     display: none;
@@ -217,7 +241,7 @@ header .sub .login {
     margin: 2rem 1rem;
   }
   .hero .hero__content .clients {
-    margin: 3rem 1.5rem 1rem 1.5rem;
+    margin: 3rem 1.5rem;
   }
   .hero .hero__content .clients img {
     height: 20px;

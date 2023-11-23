@@ -2,6 +2,9 @@
   body#OpenMobileMenu {
     position: relative;
     overflow: hidden;
+    img {
+      flex: none;
+    }
     .menuOverlay {
       background-color: rgba($color: #000000, $alpha: 0.6);
       position: absolute;
@@ -9,6 +12,7 @@
       bottom: 0;
       right: 0;
       left: 0;
+      flex: none;
       .menu {
         height: 100%;
         position: absolute;
@@ -17,6 +21,8 @@
         background-color: $White;
         padding: 1.5rem;
         width: 65%;
+        flex-direction: column;
+        justify-content: start;
         .mobileMenu {
           text-align: right;
           #openMenuIcon {
@@ -50,7 +56,9 @@
     margin-top: 0;
     .menuOverlay {
       .menu {
+        justify-content: end;
         .mobileMenu {
+          display: block;
           #closeMenuIcon {
             display: none;
           }
@@ -84,7 +92,7 @@
         margin: 2rem 1rem;
       }
       .clients {
-        margin: 3rem 1.5rem 1rem 1.5rem;
+        margin: 3rem 1.5rem;
         img {
           height: 20px;
         }
