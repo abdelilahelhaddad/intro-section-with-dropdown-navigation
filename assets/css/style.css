@@ -137,14 +137,11 @@ header .sub .login {
 }
 
 @media (max-width: 425px) {
-  body {
+  body#OpenMobileMenu {
     position: relative;
+    overflow: hidden;
   }
-  header {
-    padding: 1.5rem 1.5rem 0 1.5rem;
-    margin-top: 0;
-  }
-  header .menuOverlay {
+  body#OpenMobileMenu .menuOverlay {
     background-color: rgba(0, 0, 0, 0.6);
     position: absolute;
     top: 0;
@@ -152,7 +149,7 @@ header .sub .login {
     right: 0;
     left: 0;
   }
-  header .menuOverlay .menu {
+  body#OpenMobileMenu .menuOverlay .menu {
     height: 100%;
     position: absolute;
     top: 0;
@@ -161,26 +158,43 @@ header .sub .login {
     padding: 1.5rem;
     width: 65%;
   }
-  header .menuOverlay .menu .mobileMenu {
+  body#OpenMobileMenu .menuOverlay .menu .mobileMenu {
     text-align: right;
   }
-  header .menuOverlay .menu .mobileMenu #openMenu {
+  body#OpenMobileMenu .menuOverlay .menu .mobileMenu #openMenuIcon {
     display: none;
   }
-  header .menuOverlay .menu nav {
+  body#OpenMobileMenu .menuOverlay .menu .mobileMenu #closeMenuIcon {
+    display: inline-flex;
+  }
+  body#OpenMobileMenu .menuOverlay .menu nav {
+    display: flex;
     margin: 0;
   }
-  header .menuOverlay .menu nav ul {
+  body#OpenMobileMenu .menuOverlay .menu nav ul {
     flex-direction: column;
     margin-top: 1rem;
   }
-  header .menuOverlay .menu nav ul li {
+  body#OpenMobileMenu .menuOverlay .menu nav ul li {
     margin-top: 1.5rem;
   }
-  header .sub {
+  body#OpenMobileMenu .menuOverlay .menu .sub {
     display: flex;
     flex-direction: column;
     margin-top: 2.5rem;
+  }
+  header {
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    margin-top: 0;
+  }
+  header .menuOverlay .menu .mobileMenu #closeMenuIcon {
+    display: none;
+  }
+  header .menuOverlay .menu nav {
+    display: none;
+  }
+  header .sub {
+    display: none;
   }
   .hero {
     flex-direction: column;
