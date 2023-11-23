@@ -22,3 +22,15 @@ body.addEventListener("click", function (e) {
     companyDropdown.style.display = "none";
   }
 });
+
+const openMenuIcon = document.querySelector("#openMenuIcon");
+const closeMenuIcon = document.querySelector("#closeMenuIcon");
+const OpenMobileMenu = document.querySelector("#OpenMobileMenu");
+
+openMenuIcon.addEventListener("click", () => {
+  body.id = "OpenMobileMenu";
+});
+
+closeMenuIcon.addEventListener("click", () => {
+  body.removeAttribute("id");
+});
