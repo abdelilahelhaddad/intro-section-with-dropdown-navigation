@@ -1,6 +1,6 @@
-const features = document.querySelector("li#features");
+const features = document.querySelector("#features");
 const featuresDropdown = document.querySelector("#featuresDropdown");
-const company = document.querySelector("li#company");
+const company = document.querySelector("#company");
 const companyDropdown = document.querySelector("#companyDropdown");
 const body = document.querySelector("body");
 
@@ -14,14 +14,18 @@ company.addEventListener("mouseover", function () {
   featuresDropdown.style.display = "none";
 });
 
-body.addEventListener("click", function (e) {
-  if (e.target == featuresDropdown || e.target == companyDropdown) {
-    return;
-  } else {
-    featuresDropdown.style.display = "none";
-    companyDropdown.style.display = "none";
-  }
+featuresDropdown.addEventListener("mouseout", function () {
+  featuresDropdown.style.display = "none";
 });
+
+companyDropdown.addEventListener("mouseover", function () {
+  companyDropdown.style.display = "none";
+});
+
+if (window.matchMedia("(max-width: 768px)").matches) {
+  featuresDropdown.classList.remove("dropdown");
+  companyDropdown.classList.remove("dropdown");
+}
 
 const openMenuIcon = document.querySelector("#openMenuIcon");
 const closeMenuIcon = document.querySelector("#closeMenuIcon");
@@ -33,8 +37,4 @@ openMenuIcon.addEventListener("click", () => {
 
 closeMenuIcon.addEventListener("click", () => {
   body.removeAttribute("id");
-});
-
-body.addEventListener("click", (e) => {
-  console.log(e.target);
 });

@@ -33,7 +33,7 @@ header {
   padding: 0 3rem;
   margin-top: 1.8rem;
 }
-header img {
+header a img {
   flex: 1;
 }
 header .menuOverlay {
@@ -153,7 +153,7 @@ header .menuOverlay .menu .sub .login {
     position: relative;
     overflow: hidden;
   }
-  body#OpenMobileMenu img {
+  body#OpenMobileMenu a img {
     flex: none;
   }
   body#OpenMobileMenu .menuOverlay {

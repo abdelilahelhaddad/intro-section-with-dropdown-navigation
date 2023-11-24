@@ -42,8 +42,10 @@ header {
   justify-content: space-between;
   padding: 0 3rem;
   margin-top: 1.8rem;
-  img {
-    flex: 1;
+  a {
+    img {
+      flex: 1;
+    }
   }
   .menuOverlay {
     flex: 13;
