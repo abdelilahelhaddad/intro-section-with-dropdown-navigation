@@ -194,7 +194,19 @@ header .menuOverlay .menu .sub .login {
     margin-top: 1rem;
   }
   body#OpenMobileMenu .menuOverlay .menu nav ul li {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
+    margin-right: 0;
+  }
+  body#OpenMobileMenu .menuOverlay .menu nav ul li .mobileDropdown {
+    margin-left: 1.5rem;
+    margin-top: 0;
+    display: flex;
+  }
+  body#OpenMobileMenu .menuOverlay .menu nav ul li .mobileDropdown li img {
+    margin-right: 0.8rem;
+  }
+  body#OpenMobileMenu .menuOverlay .menu nav ul li .dpNone {
+    display: none !important;
   }
   body#OpenMobileMenu .menuOverlay .menu .sub {
     display: flex;

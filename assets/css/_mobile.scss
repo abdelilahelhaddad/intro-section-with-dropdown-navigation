@@ -41,7 +41,21 @@
             flex-direction: column;
             margin-top: 1rem;
             li {
-              margin-top: 1.5rem;
+              margin-top: 1rem;
+              margin-right: 0;
+              .mobileDropdown {
+                margin-left: 1.5rem;
+                margin-top: 0;
+                display: flex;
+                li {
+                  img {
+                    margin-right: 0.8rem;
+                  }
+                }
+              }
+              .dpNone {
+                display: none !important;
+              }
             }
           }
         }
